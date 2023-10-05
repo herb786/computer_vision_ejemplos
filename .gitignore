@@ -2,3 +2,4 @@
 *.dat
 upscaled.png
 *.pb
+face_landmark_model.dat
