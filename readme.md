@@ -1,9 +1,9 @@
-## Problemas compilando apps usando la última version de opencv: 
-Problema. Algunos aplicativos estan deshabilitados
-Solución. Abrir el archivo opencv/apps/CMakeLists.txt y remover el numeral que comenta el aplicativo deshabilitado
-### trainingcascade:  
+## Problemas compilando aplicativos usando la última version de opencv: 
+1. Problema. Algunos aplicativos como *traincascade* estan deshabilitados
+Solución. Abrir el archivo *opencv/apps/CMakeLists.txt* y remover el numeral que comenta el aplicativo deshabilitado
 > <code>ocv_add_app(traincascade)</code>
-Problema. El aplicativo createsamples no compila siendo la fuente del error el fichero utility.cpp
+
+2. Problema. El aplicativo *createsamples* no compila siendo la fuente del error el fichero *utility.cpp*
 Solución. Remplazar aquel fichero con el fichero del repositorio maestro
 ### https://github.com/opencv/opencv/blob/master/apps/createsamples/utility.cpp
 > <code>ocv_add_app(createsamples)</code>

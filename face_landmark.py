@@ -5,7 +5,7 @@ face_cascade = cv.CascadeClassifier()
 face_cascade.load('modelos/lbpcascade_frontalface_improved.xml')
 
 #-- Cargar la imagen
-frame = cv.imread('arte/howler.jpg')
+frame = cv.imread('arte/benzema.jpg')
 
 #-- Cargar el detector de fronteras
 facemark = cv.face.createFacemarkKazemi() 
