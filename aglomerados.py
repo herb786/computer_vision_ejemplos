@@ -8,7 +8,7 @@ Y = np.random.randint(60,85,(25,2))
 Z = np.vstack((X,Y))
 Z = np.float32(Z)
 
-# Adiestrar datos usando 2 aglomerados
+# Adiestrar modelos usando 2 aglomerados
 # Las aglomeraciones se crean colapsando promedios locales
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 10, 1.0)
 ret,label,center=cv.kmeans(Z, 2, None, criteria, 10, cv.KMEANS_RANDOM_CENTERS)

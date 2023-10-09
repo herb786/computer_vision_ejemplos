@@ -29,7 +29,7 @@ plt.scatter(green[:,0],green[:,1],80,'r','*')
 newcomer = np.random.randint(0,100,(1,2)).astype(np.float32)
 plt.scatter(newcomer[:,0],newcomer[:,1],80,'k','o')
 
-# Iniciar el adiestrador de datos
+# Iniciar el adiestrador de modelos
 knn = cv.ml.KNearest_create()
 knn.train(trainData, cv.ml.ROW_SAMPLE, responses)
 

@@ -28,7 +28,7 @@ def detectAndDisplay(frame):
 
 martillo_cascade = cv.CascadeClassifier()
 
-# Cargar el clasificador adiestrados
+# Cargar el clasificador adiestrado
 martillo_cascade.load('martillos/cascada/cascade.xml')
 
 frame = cv.imread('martillos/test.png')
